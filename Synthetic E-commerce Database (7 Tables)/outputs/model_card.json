@@ -1,0 +1,42 @@
+{
+  "chosen": "Ensemble (LR-L2 + GBM)",
+  "features": [
+    "n_orders",
+    "recency_days",
+    "tenure_days",
+    "net_sum",
+    "net_mean",
+    "n_90d",
+    "n_180d",
+    "n_365d",
+    "decay_n_180",
+    "freq_trend",
+    "ipt_shrunk",
+    "overdue_ratio",
+    "bgnbd_p_alive",
+    "bgnbd_exp_n",
+    "signup_age_days",
+    "q4_overlap_days",
+    "m_sin",
+    "m_cos"
+  ],
+  "hgb_params": {
+    "max_depth": 2,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 100,
+    "l2_regularization": 1.0,
+    "max_leaf_nodes": 15,
+    "max_features": 1.0
+  },
+  "hgb_iterations": 50,
+  "test_metrics": {
+    "AUC": 0.5371277083423659,
+    "AUC (within-snapshot)": 0.5371783129426916,
+    "PR-AUC": 0.514864276492291,
+    "KS": 0.07085237415553451,
+    "Lift@10%": 1.3729491226848622,
+    "LogLoss": 0.6800136876844467,
+    "Brier": 0.2436249862262063,
+    "ECE": 0.02939208862278633
+  }
+}
